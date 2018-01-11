@@ -1,0 +1,81 @@
+<import src="/template/split/split" />
+<import src="/template/catagory-title/catagory-title" />
+<import src="/template/product-item/product-item" />
+<!-- banner和搜索 -->
+<view class="banner-wrapper">
+    <!-- banner 图片尺寸750*360 -->
+    <swiper indicator-dots="true" autoplay="true" indicator-color="rgba(255,255,255,0.5)" indicator-active-color="#f05077" class="banner" id="banner" interval="3000">
+        <block wx:for="{{bannerData}}" wx:key="{{index}}">
+            <swiper-item>
+                <navigator hover-class="none" url="{{item.url}}" class="slider-url">
+                    <image src="{{item.imgUrl}}" class="slide-image" />
+                </navigator>
+            </swiper-item>
+        </block>
+    </swiper>
+    <!-- banner上的搜索框 -->
+    <view class="search-wrapper {{searchAddAct?'act':''}}">
+        <view class="inp-wrapper">
+            <input placeholder="搜索优惠券" class="inp" placeholder-class="holder-inp"></input>
+        </view>
+    </view>
+</view>
+
+<!-- 5个分类 -->
+<view class="catagory">
+    <block wx:for="{{catagory}}" wx:key="{{index}}">
+        <navigator hover-class="none" class="item" url="{{item.url}}">
+            <view class="icon">
+                <image src="{{item.imgUrl}}"></image>
+            </view>
+            <view>{{item.text}}</view>
+        </navigator>
+    </block>
+</view>
+
+<!-- 分割线 -->
+<template is="split"></template>
+
+<!-- 不规则分类 -->
+<view class="irregular-catagory clearfix">
+    <view class="one item"><image src="/static/images/index/c01.jpg"></image></view>
+    <view class="two item"><image src="/static/images/index/c02.jpg"></image></view>
+    <view class="three item"><image src="/static/images/index/c03.jpg"></image></view>
+    <view class="three item"><image src="/static/images/index/c04.jpg"></image></view>
+</view>
+
+<!-- 分割线 -->
+<template is="split"></template>
+
+<!-- 今日上新 -->
+<view class="product-list">
+    <template is="catagoryTitle" data="{{detail:'每日十点更新优惠券',title:'今日上新'}}"></template>
+    <view class="product-wrapper">
+        <scroll-view scroll-x="true" class="scroll-view-x">
+            <block wx:for="{{5}}" wx:key="{{index}}">
+                <template is="productItem" data="{{item:productItem}}"></template>
+            </block>
+        </scroll-view>
+    </view>
+    <view class="see-more-btn">查看更多>></view>
+</view>
+
+<!-- 分割线 -->
+<template is="split"></template>
+
+
+<!-- 热销推荐 -->
+<view class="product-list">
+    <template is="catagoryTitle" data="{{detail:'热门销量上万、款款优惠带券',title:'热销推荐'}}"></template>
+    <view class="product-wrapper">
+        <scroll-view scroll-x="true" class="scroll-view-x">
+            <block wx:for="{{5}}" wx:key="{{index}}">
+                <template is="productItem" data="{{item:productItem}}"></template>
+            </block>
+        </scroll-view>
+    </view>
+    <view class="see-more-btn">查看更多>></view>
+</view>
+
+<!-- 分割线 -->
+<template is="split"></template>

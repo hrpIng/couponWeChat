@@ -1,0 +1,31 @@
+.exchange-form {
+    padding: 20rpx 30rpx;
+    font-size: 26rpx;
+    justify-content: center;
+    align-items: center;
+    line-height: 60rpx;
+    color: #666;
+}
+.exchange-form .item{
+    padding: 20rpx 0;
+    display: flex;
+}
+.exchange-form .item .name{
+    
+    width: 120rpx;
+    margin-right: 15rpx;
+    text-align: right;
+}
+.exchange-form .item input{
+    flex: 1;
+    border: 1px solid #ccc;
+    height: 60rpx;
+    padding:  0 15rpx;
+}
+.exchange-form  .btn{
+    margin-top: 20rpx;
+    background-color: #f05077;
+    color: #fff;
+    font-size: 26rpx;
+    line-height: 74rpx;
+}

@@ -1,0 +1,34 @@
+<import src="/template/goods-item/goods-item"/>
+<!-- 一行分类 -->
+<view class="fixed-classify">
+    <view class="type-classify">
+        <scroll-view scroll-x="true" class="scroll-view-x">
+            <block wx:for="{{catagoryData}}" wx:key="{{index}}">
+                <view class="item {{selectCatagory==index?'act':''}}" data-index="{{index}}" bindtap="selectCategory">{{item}}</view>
+            </block>
+        </scroll-view>
+    </view>
+
+    <!-- 一行排序 -->
+    <view class="sort-wrapper">
+        <view class="item act">综合</view>
+        <view class="item">价格</view>
+        <view class="item">销量</view>
+        <view class="item">优惠价</view>
+        <view class="coupon" bindtap="changeSelect">
+            <image src="/static/images/common/select{{isChecked?'ed':''}}.png" class="isCheck"></image>
+            优惠券
+        </view>
+    </view>
+</view>
+
+<!-- 上面有一行则top-one 两行则top-two -->
+<view class="top-two">
+    <scroll-view scroll-y="true" class="scroll-view-y">
+        <block wx:for="{{6}}" wx:key="{{index}}">
+            <template is="goodsItem" data="{{item:goods}}"></template>
+        </block>
+        <view class="no-data" wx:if="{{false}}">我也是有底线的哦！~</view>
+        <view class="loadding-data" wx:if="{{false}}">下拉加载数据</view>
+    </scroll-view>
+</view>

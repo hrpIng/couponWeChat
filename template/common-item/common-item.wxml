@@ -1,0 +1,12 @@
+<template name="commonItem">
+    <view class="common-item">
+        <view class="item">
+            <view class="avatar" wx:if="{{item.avatar}}">
+                <image src="{{item.avatar}}"></image>
+            </view>
+            <view class="title ovh">{{item.title}}</view>
+            <view class="num">{{item.integral}}</view>
+        </view>
+        <view class="item">{{item.date}}</view>
+    </view>
+</template>

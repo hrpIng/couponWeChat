@@ -1,0 +1,19 @@
+image{
+    width: 100%;
+    height: 100%;
+}
+.shop-banner{
+    position: relative;
+    height: 250rpx;
+}
+.shop-banner .sroce{
+    position: absolute;
+    top: 30rpx;
+    right: 20rpx;
+    padding: 15rpx 30rpx;
+    font-size: 26rpx;
+    color: #999;
+    border-radius: 15rpx;
+    background-color: #eee;
+    
+}

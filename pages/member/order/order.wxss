@@ -1,0 +1,17 @@
+.my-order .order-num{
+    padding: 20rpx 30rpx;
+    font-size: 26rpx;
+    color: #666;
+    border-bottom: 1px solid #ebebeb;
+}
+.my-order .order-num .date{
+    float: right;
+    color: #999;
+}
+.my-order .total{
+    
+    padding: 30rpx;
+    text-align: right;
+    font-size: 26rpx;
+    color: #999;
+}

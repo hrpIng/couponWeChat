@@ -1,0 +1,10 @@
+<template name="integralItem">
+    <view class="ranking-item">
+        <view class='num'>{{index}}</view>
+        <view class="avatar">
+            <image src="{{item.avatar}}"></image>
+        </view>
+        <view class="item">{{item.name}}</view>
+        <view class="item">{{item.integral}}</view>
+    </view>
+</template>

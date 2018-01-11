@@ -1,0 +1,82 @@
+<import src="/template/split/split" />
+<import src="/template/goods-item/goods-item" />
+<view id="my-tg">
+    <!-- 我的信息 -->
+    <view class="home-top">
+        <view class="avatar">
+            <image src="/static/images/common/avatar.jpg"></image>
+        </view>
+        <view class="name">推广名称</view>
+        <view class="tg-ewm">推广码
+            <image src="/static/images/common/qr-ewm.png"></image>
+        </view>
+    </view>
+
+    <!-- 分割线 -->
+    <template is="split"></template>
+
+    <view class="push-wrapper">
+        <view class="line-tab">
+            <view class="item act">本月推广</view>
+            <view class="item">上月推广</view>
+        </view>
+        <view class="home-item">
+            <view class="item">
+                <view class="num">80</view>
+                <view>推广订单</view>
+            </view>
+            <view class="item">
+                <view class="num">80</view>
+                <view>预估收入</view>
+            </view>
+            <view class="item">
+                <view class="num">80</view>
+                <view>结算估计</view>
+            </view>
+        </view>
+    </view>
+
+    <!-- 分割线 -->
+    <template is="split"></template>
+</view>
+
+
+<view class="push-wrapper {{fixedTop?'act':''}}">
+    <view class="line-tab">
+        <view class="item act">所有订单</view>
+        <view class="item">结算订单</view>
+        <view class="item">失效订单</view>
+    </view>
+    <view class="push-order">
+        <view class="order-num clearfix">付款时间：2017-10-29 10:11
+            <text class="date">结算时间：2017-10-29 10:11</text>
+        </view>
+        <block wx:for="{{2}}" wx:key="{{index}}">
+            <template is="goodsItem" data="{{item:goods}}"></template>
+        </block>
+        <view class="order-num price clearfix">付款金额：￥19.23
+            <text class="date">预估收入：￥19.23</text>
+        </view>
+        <view class="order-num price clearfix">结算金额：￥19.23
+            <text class="date">结算收入：￥19.23</text>
+        </view>
+        <!-- 分割线 -->
+        <template is="split"></template>
+    </view>
+    <view class="push-order">
+        <view class="order-num clearfix">付款时间：2017-10-29 10:11
+            <text class="date">结算时间：2017-10-29 10:11</text>
+        </view>
+        <block wx:for="{{2}}" wx:key="{{index}}">
+            <template is="goodsItem" data="{{item:goods}}"></template>
+        </block>
+        <view class="order-num price clearfix">付款金额：￥19.23
+            <text class="date">预估收入：￥19.23</text>
+        </view>
+        <view class="order-num price clearfix">结算金额：￥19.23
+            <text class="date">结算收入：￥19.23</text>
+        </view>
+        <!-- 分割线 -->
+        <template is="split"></template>
+    </view>
+</view>

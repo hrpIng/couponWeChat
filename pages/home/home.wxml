@@ -1,0 +1,129 @@
+<import src="/template/split/split" />
+
+<!-- 我的信息 -->
+<view class="home-top">
+    <view class="avatar">
+        <image src="/static/images/common/avatar.jpg"></image>
+    </view>
+    <view class="name">Yang推广图标</view>
+    <view class="integral">积分50000></view>
+</view>
+
+<!-- 分割线 -->
+<template is="split"></template>
+
+<!-- 下面三个类别 -->
+<view class="home-item">
+    <view class="item">
+        <view class="num">80</view>
+        <view>收藏</view>
+    </view>
+    <view class="item">
+        <view class="num">80</view>
+        <view>订单</view>
+    </view>
+    <view class="item">
+        <view class="num">80</view>
+        <view>足迹</view>
+    </view>
+</view>
+
+<!-- 分割线 -->
+<template is="split"></template>
+
+<!-- 我的积分 -->
+<view class="home-wrapper jf">
+    <view class="title">
+        <image src="/static/images/common/jf.png"></image>
+        我的积分
+    </view>
+    <navigator hover-class="none" class="db" url="/pages/member/integral/integral">
+        <view class="box">
+            <view class="item">
+                <view class="num">5</view>
+                <view>今日积分</view>
+            </view>
+            <view class="item">
+                <view class="num">5</view>
+                <view>本月积分</view>
+            </view>
+        </view>
+    </navigator>
+    <navigator hover-class="none" url="/pages/shop/shop" class="btn">积分商城</navigator>
+</view>
+
+<!-- 分割线 -->
+<template is="split"></template>
+
+
+<!-- 我的邀请 -->
+<view class="home-wrapper yq">
+    <view class="title">
+        <image src="/static/images/common/yq.png"></image>
+        我的邀请
+    </view>
+    <navigator hover-class="none" class="db" url="/pages/member/invitation/invitation">
+        <view class="box">
+            <view class="item">
+                <view class="num">5</view>
+                <view>今日邀请</view>
+            </view>
+            <view class="item">
+                <view class="num">5</view>
+                <view>本月邀请</view>
+            </view>
+        </view>
+        <view class="btn">我要邀请</view>
+    </navigator>
+</view>
+
+<!-- 分割线 -->
+<template is="split"></template>
+
+<!-- 我的订单 -->
+<view class="home-wrapper dd">
+    <view class="title">
+        <image src="/static/images/common/dd.png"></image>
+        我的订单
+    </view>
+    <navigator hover-class="none" class="db" url="/pages/member/order/order">
+        <view class="box">
+            <view class="item">
+                <view class="num">5</view>
+                <view>今日订单</view>
+            </view>
+            <view class="item">
+                <view class="num">5</view>
+                <view>本月订单</view>
+            </view>
+        </view>
+        <view class="btn">我要录单</view>
+    </navigator>
+</view>
+
+<!-- 分割线 -->
+<template is="split"></template>
+
+<!-- 我的推广 -->
+<view class="home-wrapper tg">
+    <view class="title">
+        <image src="/static/images/common/tg.png"></image>
+        我的推广
+    </view>
+    <navigator hover-class="none" class="db" url="/pages/member/extension/extension">
+        <view class="box">
+            <view class="item">
+                <view class="num">5</view>
+                <view>今日推广</view>
+            </view>
+            <view class="item">
+                <view class="num">5</view>
+                <view>本月推广</view>
+            </view>
+        </view>
+        <view class="btn">我要推广</view>
+    </navigator>
+</view>
+
+<!-- 分割线 -->
+<template is="split"></template>

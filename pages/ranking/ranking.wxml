@@ -1,0 +1,41 @@
+<import src="/template/integral-item/integral-item" />
+<!-- 排行榜 -->
+<view class="ranking-wrapper">
+    <view class="ranking-title">
+        <view class="item {{rankingType==0?'act':''}}" data-num="0" bindtap="selectBox">积分榜(日)</view>
+        <view class="item {{rankingType==1?'act':''}}" data-num="1" bindtap="selectBox">积分榜(月)</view>
+        <view class="item {{rankingType==2?'act':''}}" data-num="2" bindtap="selectBox">three</view>
+    </view>
+    <swiper class="ranking-box scroll-view-y" bindchange="changeBox" current="{{rankingType}}">
+        <swiper-item>
+            <!-- 积分榜（日） -->
+            <view class="box scroll-view-y">
+                <scroll-view scroll-y="true" class="scroll-view-y">
+                    <block wx:for="{{5}}" wx:key="{{index}}">
+                        <template is="integralItem" data="{{item:integralData,index:index}}"></template>
+                    </block>
+                </scroll-view>
+            </view>
+        </swiper-item>
+        <swiper-item>
+            <!-- 积分榜（月） -->
+            <view class="box scroll-view-y">
+                <scroll-view scroll-y="true" class="scroll-view-y">
+                    <block wx:for="{{5}}" wx:key="{{index}}">
+                        <template is="integralItem" data="{{item:integralData,index:index}}"></template>
+                    </block>
+                </scroll-view>
+            </view>
+        </swiper-item>
+        <swiper-item>
+            <!-- 积分榜（three） -->
+            <view class="box scroll-view-y">
+                <scroll-view scroll-y="true" class="scroll-view-y">
+                    <block wx:for="{{5}}" wx:key="{{index}}">
+                        <template is="integralItem" data="{{item:integralData,index:index}}"></template>
+                    </block>
+                </scroll-view>
+            </view>
+        </swiper-item>
+    </swiper>
+</view>

@@ -1,0 +1,26 @@
+<import src="/template/goods-item/goods-item" />
+<import src="/template/split/split" />
+
+<template is="goodsItem" data="{{item:goods,exchange:true,exdetail:true}}"></template>
+<!-- 分割线 -->
+<template is="split"></template>
+
+<view class="exchange-form">
+    <view class="item">
+        <view class="name">联系人</view>
+        <input placeholder="名字"></input>
+    </view>
+    <view class="item">
+        <view class="name">手机号码</view>
+        <input placeholder="11位手机号码"></input>
+    </view>
+    <view class="item">
+        <view class="name">选择地区</view>
+        <input placeholder="地区信息"></input>
+    </view>
+    <view class="item">
+        <view class="name">详细地址</view>
+        <input placeholder="街道门牌信息"></input>
+    </view>
+    <button class="btn">兑换</button>
+</view>

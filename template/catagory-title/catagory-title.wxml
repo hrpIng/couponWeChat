@@ -1,0 +1,10 @@
+<template name="catagoryTitle">
+    <view class="product-title">
+        <view class='icon'><image src="/static/images/common/title-left.png" class='icon-left'></image></view>
+        <view class='text'>
+            <view>{{title}}</view>
+            <view class="detail">{{detail}}</view>
+        </view>
+        <view class='icon'><image src="/static/images/common/title-right.png" class='icon-right'></image></view>
+    </view>
+</template>

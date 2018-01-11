@@ -1,0 +1,60 @@
+{
+    "pages": [
+        "pages/index/index",
+        "pages/coupon/coupon",
+        "pages/broadcast/broadcast",
+        "pages/ranking/ranking",
+        "pages/home/home",
+        "pages/detail/detail",
+        "pages/member/integral/integral",
+        "pages/member/invitation/invitation",
+        "pages/member/order/order",
+        "pages/member/extension/extension",
+        "pages/shop/shop",
+        "pages/exchange/exchange"
+    ],
+    "window": {
+        "backgroundTextStyle": "light",
+        "navigationBarBackgroundColor": "#fff",
+        "navigationBarTitleText": "厝边有券",
+        "navigationBarTextStyle": "black"
+    },
+    "tabBar": {
+        "color": "#8a8a8a",
+        "backgroundColor": "#fff",
+        "borderStyle":"#ebebeb",
+        "selectedColor":"#f05077",
+        "list": [
+            {
+                "pagePath": "pages/index/index",
+                "text": "首页",
+                "iconPath": "/static/images/common/f1.png",
+                "selectedIconPath": "/static/images/common/f1-h.png"
+            },
+            {
+                "pagePath": "pages/coupon/coupon",
+                "text": "优惠券",
+                "iconPath": "/static/images/common/f2.png",
+                "selectedIconPath": "/static/images/common/f2-h.png"
+            },
+            {
+                "pagePath": "pages/broadcast/broadcast",
+                "text": "好券直播",
+                "iconPath": "/static/images/common/f3.png",
+                "selectedIconPath": "/static/images/common/f3-h.png"
+            },
+            {
+                "pagePath": "pages/ranking/ranking",
+                "text": "排行榜",
+                "iconPath": "/static/images/common/f4.png",
+                "selectedIconPath": "/static/images/common/f4-h.png"
+            },
+            {
+                "pagePath": "pages/home/home",
+                "text": "我的",
+                "iconPath": "/static/images/common/f5.png",
+                "selectedIconPath": "/static/images/common/f5-h.png"
+            }
+        ]
+    }
+}

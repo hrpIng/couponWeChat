@@ -1,0 +1,5 @@
+<import src="/template/common-item/common-item" />
+
+<block wx:for="{{5}}" wx:key="{{index}}">
+    <template is="commonItem" data="{{item:invitationlData}}"></template>
+</block>

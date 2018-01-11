@@ -1,0 +1,229 @@
+.detail-wrapper{
+    padding-bottom: 100rpx;
+}
+/* 详情banner图 */
+.detail-banner{
+    height: 750rpx;
+}
+.detail-banner image{
+    height: 100%;
+    width: 100%;
+}
+
+/* 详情信息 */
+.detail-info{
+    padding: 20rpx 30rpx;
+}
+
+.detail-info .title{
+    font-size: 26rpx;
+    line-height: 38rpx;
+    height: 76rpx;
+}
+.detail-info .price-box{
+    margin-top: 5rpx;
+    margin-bottom: 5rpx;
+    font-size: 22rpx;
+    color: #f05077;
+    line-height: 52rpx;
+}
+
+.detail-info .price{
+    font-size: 32rpx;
+}
+
+.detail-info .old-price{
+    color: #999;
+    margin-left: 15rpx;
+}
+.detail-info .num{
+    float: right;
+    color: #999;
+    font-size: 24rpx;
+}
+.detail-info .coupon{
+    float: left;
+    line-height: 36rpx;
+    font-size: 22rpx;
+    color: #f05077;
+}
+.detail-info .coupon .icon{
+    width: 36rpx;
+    height: 36rpx;
+    margin-right: 10rpx;
+    vertical-align: top;
+}
+.detail-info .shopname{
+    float: right;
+    font-size: 22rpx;
+    line-height: 36rpx;
+
+}
+.detail-info .shopname .type{
+    width: 30rpx;
+    height: 30rpx;
+    margin-right: 10rpx;
+    margin-top: 3rpx;
+    vertical-align: top;
+}
+/* 领优惠券按钮 */
+.coupon-wrapper{
+    position: relative;
+    width: 650rpx;
+    height: 130rpx;
+    margin: 15rpx auto 30rpx;
+}
+.coupon-wrapper image{
+    width: 100%;
+    height: 100%;
+}
+.coupon-wrapper .coupon-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    height: 100%;
+    text-align: center;
+}
+.coupon-wrapper .coupon-text{
+    flex: 1;
+    color: #fff;
+    font-size: 36rpx;
+}
+.coupon-wrapper .coupon-text .num{
+font-size: 44rpx;
+margin-right: 10rpx;
+}
+.coupon-wrapper .get-coupon-btn{
+    width: 250rpx;
+    color: #fff;
+    line-height: 80rpx;
+    font-size: 32rpx;
+    border-left: 1px dashed #fff;
+}
+/* 领券条件 */
+.draw-condition{
+    padding: 30rpx;
+}
+.draw-condition .item{
+    float: left;
+    color: #999;
+    font-size: 24rpx;
+    padding: 10rpx 0;
+}
+.draw-condition .item.fr{
+    float: right;
+}
+.draw-condition .item .red{
+    color: #f05077;
+}
+
+/* 图文详情 */
+.graphic-detail .title{
+    padding: 0 20rpx;
+    height: 70;
+    border-bottom: 1rpx solid #eee;
+}
+.graphic-detail .title .name{
+    display: inline-block;
+    padding: 0 15rpx;
+    font-size: 28rpx;
+    color: #f05077;
+    line-height: 68rpx;
+    border-bottom: 2rpx solid #f05077;
+    vertical-align: top;
+}
+.graphic-detail .graphic-wrapper{
+    padding: 30rpx;
+    font-size: 26rpx;
+    line-height: 40rpx;
+}
+.graphic-detail .graphic-wrapper image{
+    max-width: 100%;
+    width:690rpx;
+    height:690rpx;
+}
+
+/* 底部固定 */
+.fixed-bottom{
+    display: flex;
+    position: fixed;
+    justify-content: center;
+    align-items: center;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 99rpx;
+    font-size: 22rpx;
+    line-height: 34rpx;
+    color: #666;
+    background-color: #fff;
+    border-top: 1rpx solid #ebebeb;
+    z-index: 11;
+    text-align: center;
+}
+
+.fixed-bottom .item{
+    flex: 1;
+}
+.fixed-bottom .item-btn{
+    width: 36%;
+    background-color: #f05077;
+    line-height: 99rpx;
+    color: #fff;
+
+}
+.fixed-bottom .item .icon{
+    padding-top: 10rpx;
+    width: 32rpx;
+    height: 32rpx;
+}
+.ewm-btn{
+    position: fixed;
+    right: 0;
+    bottom: 130rpx;
+    width: 72rpx;
+    height: 72rpx;
+    padding: 0;
+    background-color: #fff;
+    z-index: 12;
+}
+
+.ewm-btn .icon{
+    display: block;
+    margin: 11rpx auto;
+    width: 50rpx;
+    height: 50rpx;
+}
+.ewm-popup{
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 15;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.3s;
+}
+.ewm-popup.act{
+    visibility: visible;
+    opacity: 1;
+    transition: all 0.3s;
+}
+.ewm-popup .mask{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.ewm-popup .ewm-img{
+    position: absolute;
+    left: 10%;
+    top: 50%;
+    width: 80%;
+    height: 858rpx;
+    transform: translateY(-50%);
+}

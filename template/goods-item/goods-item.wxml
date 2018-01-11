@@ -1,0 +1,36 @@
+<template name="goodsItem">
+    <view class="goods-item-wrapper">
+        <navigator hover-class="none" url="{{item.url}}" class="goods-item">
+            <image class="img" src="{{item.imgUrl}}"></image>
+            <view class="goods-info">
+                <view class="title ovh2">{{item.title}}</view>
+                <block wx:if="{{!exchange}}">
+                    <view class="clearfix">
+                        <view class="price">￥{{item.price}}
+                            <text class="old-price">￥{{item.oldprice}}</text>
+                        </view>
+                        <view class="num">月销{{item.num}}{{item.unit}}</view>
+                    </view>
+                    <view class="clearfix other">
+                        <view class="coupon">
+                            <image class="coupon-icon" src="/static/images/common/yhq-icon.png"></image>{{item.coupon}}元
+                        </view>
+                        <view class="shopname">
+                            <image src="/static/images/common/{{item.type}}.png" class="icon"></image>{{item.shopname}}
+                        </view>
+                    </view>
+                </block>
+                <block wx:if="{{exchange}}">
+                    <view class="exchange-sroce clearfix">
+                        <image src="/static/images/common/jf.png" class="jf-icon"></image>{{item.integral}}
+                        <view wx:if="{{hasexchage}}"  class="order-num">单号：{{item.ordernum}}</view>
+                    </view>
+                </block>
+                <block wx:if="{{hasexchage}}">
+                <view class="exchange-date">兑换日期：2017-10-26 10：22</view>
+                </block>
+            </view>
+        </navigator>
+        <navigator hover-class="none" wx:if="{{exchange && !exdetail && !hasexchage}}" url="{{item.changeurl}}" class="exchange-btn">兑换</navigator>
+    </view>
+</template>

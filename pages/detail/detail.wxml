@@ -1,0 +1,123 @@
+<import src="/template/split/split" />
+<import src="/template/catagory-title/catagory-title" />
+<import src="/template/product-item/product-item" />
+
+<view class="detail-wrapper">
+    <!-- 详情banner图 -->
+    <swiper indicator-dots="true" autoplay="true" interval="3000" indicator-color="rgba(255,255,255,0.5)" indicator-active-color="#f05077" class="detail-banner">
+        <block wx:for="{{bannerData}}" wx:key="{{index}}">
+            <swiper-item>
+                <image src="{{item}}" />
+            </swiper-item>
+        </block>
+    </swiper>
+
+    <!-- 商品详情信息 -->
+    <view class="detail-info">
+        <view class="title ovh2">出口日韩可爱金属闹钟创意静音夜灯4寸 时尚数字学生床头闹钟简约</view>
+        <view class="clearfix">
+            <view class="price-box">
+                ￥
+                <text class="price">24.8</text>
+                <text class="old-price">￥34.8</text>
+                <view class="num">月销10000件</view>
+            </view>
+        </view>
+        <view class="clearfix">
+            <view class="coupon">
+                <image class="icon" src="/static/images/common/yhq-icon.png"></image>
+                <text>10元</text>
+            </view>
+            <view class="shopname">
+                <image src="/static/images/common/tianmao.png" class="type"></image>
+                <text>艾弗缇家居企业店</text>
+            </view>
+        </view>
+    </view>
+
+
+    <!-- 领优惠券 -->
+    <view class="coupon-wrapper">
+        <image src="/static/images/common/yhq-bg.png"></image>
+        <view class="coupon-box">
+            <view class="coupon-text">
+                <text class="num">10</text>元优惠券</view>
+            <view class="get-coupon-btn">立即领取</view>
+        </view>
+    </view>
+
+    <!-- 分割线 -->
+    <template is="split"></template>
+
+    <!-- 领取条件 -->
+    <view class="draw-condition clearfix">
+        <view class='item'>领券条件：
+            <text class="red">满34元减10元</text>
+        </view>
+        <view class='item fr'>剩余券数：
+            <text class="red">5000</text>
+        </view>
+        <view class='item'>领券期限：
+            <text class="red">2018.01.07-2017.01.10</text>
+        </view>
+    </view>
+
+    <!-- 分割线 -->
+    <template is="split"></template>
+
+    <!-- 今日上新 -->
+    <view class="product-list">
+        <template is="catagoryTitle" data="{{detail:'',title:'相似商品'}}"></template>
+        <view class="product-wrapper">
+            <scroll-view scroll-x="true" class="scroll-view-x">
+                <block wx:for="{{5}}" wx:key="{{index}}">
+                    <template is="productItem" data="{{item:productItem}}"></template>
+                </block>
+            </scroll-view>
+        </view>
+        <view class="see-more-btn">查看更多>></view>
+    </view>
+
+    <!-- 分割线 -->
+    <template is="split"></template>
+
+    <!-- 图文详情 -->
+    <view class="graphic-detail">
+        <view class="title">
+            <text class="name">图文详情</text>
+        </view>
+        <view class="graphic-wrapper">
+            <image src="/static/images/detail/banner.jpg"></image>
+            <image src="/static/images/detail/banner.jpg"></image>
+            <image src="/static/images/detail/banner.jpg"></image>
+        </view>
+    </view>
+    <!-- 分割线 -->
+    <template is="split"></template>
+</view>
+
+<!-- 详情底部按钮 -->
+<view class="fixed-bottom">
+    <view class="item">
+        <image src="/static/images/common/kf-icon.png" class="icon"></image>
+        <view>客服</view>
+    </view>
+    <view class="item">
+    <image src="/static/images/common/sc-icon.png" class="icon"></image>
+        <view>收藏</view>
+    </view>
+    <view class="item">
+    <image src="/static/images/common/fx-icon.png" class="icon"></image>
+        <view>分享</view>
+    </view>
+    <view class="item-btn">淘口令领券</view>
+</view>
+
+<!-- 二维码弹窗按钮 -->
+<button class="ewm-btn" bindtap="qrLayerState"><image src="/static/images/common/ewm.png" class="icon"></image></button>
+
+<!-- 二维码弹出框 -->
+<view class="ewm-popup {{qrLayer?'act':''}}">
+    <view class="mask" bindtap="qrLayerState"></view>
+    <image src="/static/images/detail/qrImg.png" class="ewm-img"></image>
+</view>

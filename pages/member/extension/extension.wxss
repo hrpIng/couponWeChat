@@ -1,0 +1,52 @@
+image {
+    width: 100%;
+    height: 100%;
+}
+
+.home-top {
+    display: flex;
+    align-items: center;
+    padding: 30rpx;
+    line-height: 48rpx;
+}
+
+.home-top .avatar {
+    width: 100rpx;
+    height: 100rpx;
+    margin-right: 20rpx;
+    border-radius: 10rpx;
+    overflow: hidden;
+}
+
+.home-top .name {
+    flex: 1;
+    font-size: 26rpx;
+    color: #666;
+}
+
+.home-top .tg-ewm {
+    font-size: 26rpx;
+    color: #999;
+}
+
+.home-top .tg-ewm image {
+    width: 48rpx;
+    height: 48rpx;
+    margin-left: 10px;
+    vertical-align: top;
+}
+
+.push-order .order-num{
+    padding: 20rpx 30rpx;
+    font-size: 24rpx;
+    color: #666;
+    border-bottom: 1px solid #ccc;
+}
+.push-order .order-num.price{
+    padding: 10rpx 30rpx;
+    border-bottom: none;
+}
+.push-order .order-num .date{
+    float: right;
+    color: #999;
+}

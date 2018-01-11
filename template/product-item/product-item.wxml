@@ -1,0 +1,11 @@
+<template name="productItem">
+    <navigator hover-class="none" url="{{item.url}}" class='product-item'>
+        <image src="{{item.imgUrl}}" class='img'></image>
+        <view class="ovh2 title">{{item.title}}</view>
+        <view class="price">￥{{item.price}}</view>
+        <view class="discount">
+            <image src="/static/images/common/yhq-icon.png" class="yhq-icon"></image>
+            {{item.discount}}
+        </view>
+    </navigator>
+</template>

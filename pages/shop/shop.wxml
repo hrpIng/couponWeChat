@@ -1,0 +1,22 @@
+<import src="/template/goods-item/goods-item" />
+
+<view class="shop-banner">
+    <!-- 广告图750*250 -->
+    <image src="/static/images/index/banner03.jpg"></image>
+    <view class="sroce">积分50000000</view>
+</view>
+
+
+<view class="line-tab">
+    <view class="item act">可兑换商品</view>
+    <view class="item">待兑换商品</view>
+    <view class="item">已兑换商品</view>
+</view>
+
+<block wx:for="{{1}}" wx:key="{{index}}">
+    <template is="goodsItem" data="{{item:goods,exchange:true,hasexchage:true}}"></template>
+    <template is="goodsItem" data="{{item:goods,exchange:true}}"></template>
+    <template is="goodsItem" data="{{item:goods,exchange:true,exdetail:true}}"></template>
+    
+</block>
+

@@ -1,0 +1,62 @@
+/* banner */
+image {
+    width: 100%;
+    height: 100%;
+}
+.banner-wrapper {
+    position: relative;
+}
+
+.banner {
+    height: 360rpx;
+}
+
+.banner .slider-url {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+/* 分类 */
+
+.catagory {
+    display: flex;
+    padding: 30rpx 20rpx;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 26rpx;
+}
+
+.catagory .item {
+    flex: 1;
+}
+
+.catagory .icon {
+    width: 70rpx;
+    height: 70rpx;
+    margin: 0 auto 10rpx;
+}
+
+/* 首页不规则分类样式 */
+.irregular-catagory .item{
+    float: left;
+}
+.irregular-catagory .one{
+    width: 250rpx;
+    height: 400rpx;
+}
+
+.irregular-catagory .two{
+    width: 500rpx;
+    height: 200rpx;
+}
+
+.irregular-catagory .three{
+    width: 250rpx;
+    height: 200rpx;
+}
+.irregular-catagory .item image{
+    width: 100%;
+    height: 100%;
+}

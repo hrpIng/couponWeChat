@@ -1,0 +1,41 @@
+<import src="/template/goods-item/goods-item" />
+<scroll-view scroll-y="true" class="scroll-view-y" lower-threshold="0" bindscrolltolower="loaddingMore">
+    <!-- 直播 -->
+    <view class="broadcast-wrapper">
+        <!-- 正方形图片 -->
+        <view class="item">
+            <view class="avatar">
+                <image src="/static/images/common/avatar.jpg"></image>
+            </view>
+            <view class="broadcast-item">
+                <view class="box img-box">
+                    <image src="/static/images/detail/banner.jpg"></image>
+                </view>
+            </view>
+        </view>
+        <!-- 商品信息 -->
+        <view class="item">
+            <view class="avatar">
+                <image src="/static/images/common/avatar.jpg"></image>
+            </view>
+            <view class="broadcast-item">
+                <view class="box">
+                    <template is="goodsItem" data="{{item:goods}}"></template>
+                </view>
+            </view>
+        </view>
+
+        <!-- 长方形图片 -->
+        <view class="item">
+            <view class="avatar">
+                <image src="/static/images/common/avatar.jpg"></image>
+            </view>
+            <view class="broadcast-item">
+                <view class="box banner-box">
+                    <image src="/static/images/broadcast/img.jpg"></image>
+                </view>
+            </view>
+        </view>
+    </view>
+    <view class="loadding-more" wx:if="{{false}}">正在加载更多</view>
+</scroll-view>

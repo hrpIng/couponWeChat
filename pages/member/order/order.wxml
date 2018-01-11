@@ -1,0 +1,28 @@
+<import src="/template/split/split" />
+<import src="/template/goods-item/goods-item" />
+
+<view class="my-order">
+    <view class="order-num clearfix">订单号：333049384938434
+        <text class="date">2017-10-29</text>
+    </view>
+    <block wx:for="{{2}}" wx:key="{{index}}">
+        <template is="goodsItem" data="{{item:goods}}"></template>
+    </block>
+    <view class="total">共一件商品 合计￥19.23</view>
+</view>
+
+<!-- 分割线 -->
+<template is="split"></template>
+
+<view class="my-order">
+    <view class="order-num clearfix">订单号：333049384938434
+        <text class="date">2017-10-29</text>
+    </view>
+    <block wx:for="{{1}}" wx:key="{{index}}">
+        <template is="goodsItem" data="{{item:goods}}"></template>
+    </block>
+    <view class="total">共一件商品 合计￥19.23</view>
+</view>
+
+<!-- 分割线 -->
+<template is="split"></template>
